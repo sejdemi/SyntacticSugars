@@ -10,32 +10,34 @@ import styled from 'styled-components';
 //test in browser to see how dimensions change from a desktop to mobile version
 
 const AppLayout = styled.div`
-padding: 40px;
 display: grid;
-grid-template-columns: 180px auto 100px 100px`;
+font-size: 1.5em;
+text-align: center;
+grid-template-rows: 1fr;
+place-items: center;
+margin:0;`
 
 
 class App extends Component {
-  // renders a button and a boolean; the button flips the boolean
   render() {
     return (
       <AppLayout>
       <div>
         <h1>App</h1>
-        <div style={{width: '100%', backgroundColor:'blue'}}>
-          <h1>DUMMY COMPONENT ONE</h1>
+        <div style={{margin: 0, backgroundColor:'blue'}}>
+          {/* <h1>DUMMY COMPONENT ONE</h1> */}
           <DummyComponent/>
         </div>
-        <div style={{width: '100%', backgroundColor:'red'}}>
-        <h1>DUMMY COMPONENT TWO</h1>
+        <div style={{backgroundColor:'red'}}>
+        {/* <h1>DUMMY COMPONENT TWO</h1> */}
           <DummyComponent/>
         </div>
-        <div style={{width: '100%', backgroundColor:'yellow'}}>
-        <h1>DUMMY COMPONENT THREE</h1>
+        <div style={{backgroundColor:'yellow'}}>
+        {/* <h1>DUMMY COMPONENT THREE</h1> */}
           <DummyComponent/>
         </div>
-        <div style={{width: '100%', backgroundColor:'purple'}}>
-        <h1>DUMMY COMPONENT FOUR</h1>
+        <div style={{backgroundColor:'purple'}}>
+        {/* <h1>DUMMY COMPONENT FOUR</h1> */}
           <DummyComponent/>
         </div>
       </div>

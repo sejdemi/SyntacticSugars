@@ -8,7 +8,7 @@ class DummyComponent extends React.Component {
     render() {
         return (
             <div>
-                {/* <h1>DUMMY COMPONENT NUMBER ONE</h1> */}
+                <div>DUMMY COMPONENT NUMBER ONE</div>
             </div>
         )
     }
